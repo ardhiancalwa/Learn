@@ -1,0 +1,15 @@
+program faktor_dari_N
+kamus
+    N, d : integer
+    s : boolean
+algoritma
+    input(N)
+    for d <- 1 to N do
+        if N mod d == 0 then
+            s <- true
+        else 
+            s <- false
+        endif
+        output(d, s)
+    endfor
+endprogram

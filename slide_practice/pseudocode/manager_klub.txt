@@ -1,0 +1,18 @@
+program manager_klub
+kamus
+    hasil : string
+    hari, kalah : integer
+algoritma
+    kalah <- 0
+    for hari <- 1 to 5 do
+        input(hasil)
+        if hasil == "kalah" then
+            kalah <- kalah + 1
+        endif
+    endfor
+    if kalah == 5 then
+        output("dipecat")
+    else 
+        output("tidak dipecat")
+    endif
+endprogram

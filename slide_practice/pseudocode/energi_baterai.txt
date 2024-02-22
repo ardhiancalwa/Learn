@@ -1,0 +1,8 @@
+program energy_battery
+kamus
+	E0, E1, c, cc : integer
+algoritma
+	input(E0, c, E1)
+	cc <- (E0-E1) div c
+	output(cc)
+endprogram

@@ -1,0 +1,16 @@
+program lebar_daun
+kamus
+    n, widest, leaf, i : integer
+algoritma
+    input(n)
+    widest <- leaf
+    for i <- 1 to n do
+        input(leaf)
+        if leaf > widest then
+            widest = leaf
+        else
+            widest = widest
+        endif
+    endfor
+    output(widest)
+endprogram

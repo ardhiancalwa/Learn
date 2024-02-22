@@ -1,0 +1,9 @@
+program faktor
+kamus
+    x, y : integer
+    faktor : boolean
+algoritma
+    input(x, y)
+    faktor <- y mod x == 0
+    output(faktor)
+endprogram
