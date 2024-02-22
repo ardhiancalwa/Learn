@@ -1,0 +1,15 @@
+program aktivitas
+kamus 
+    belajar, main : integer
+    aktivitas : string
+algoritma 
+    input(aktivitas)
+    while aktivitas != "tidur" do
+        if aktivitas == "belajar" then 
+            belajar = belajar + 1
+        else if aktivitas == "main" then
+            main = main + 1
+        endif
+        input(aktivitas)
+    endwhile
+endprogram

@@ -1,0 +1,14 @@
+progra hitung_bilbul
+kamus
+    bil1, bil2 : integer
+    jumBil : integer
+algoritma
+    input(bil1, bil2)
+    while bil1 != 0 and bil2 != 0 do
+        if bil1%2 != 0 and bil2%2 == 0 then
+            jumBil = jumBil + bil1 + bil2
+        endif
+        input(bil1, bil2)
+    endwhile
+    output(jumBil)
+endprogram

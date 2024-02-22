@@ -1,0 +1,13 @@
+program <penjumlahan>
+{program membaca 2 buah bilangan, lalu menjumlahkannya dan mencetak hasilnya di layar}
+
+kamus 
+    bil1, bil2, hasil : integer
+
+algoritma
+    input(bil1, bil2)
+    hasil <- bil1 + bil2
+    output(hasil)
+
+endprogram 
+

@@ -1,0 +1,22 @@
+program ojol
+kamus
+    jam, menit, totBayar : integer
+    jarak                : real
+algoritma
+    input(jam, menit, jarak)
+    if  (jam >= 5 and menit >= 0) and (jam <= 9 and menit <= 59) or (jam >= 16 and menit >= 0) and (jam <= 19 and menit <= 0) then
+        if jarak > 0 and jarak < 10 then
+            totBayar <- 5000 * jarak
+            output(totBayar)
+        else if jarak > 10 and jarak <= 20 then
+            totBayar <- 4500 * jarak
+            output(totBayar)
+        endif
+    else if (jam <= 22 and menit <= 0) 
+        if jarak > 0 and jarak <= 20 then
+            totBayar <- 4000 * jarak
+            output(totBayar)
+    else 
+        output("Maaf, kami tidak bisa melayani pesanan anda.)
+    endif
+endprogram

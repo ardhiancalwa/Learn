@@ -1,0 +1,18 @@
+program prima
+kamus
+    prima : boolean
+    bil : integer
+algoritma
+    input(bil)
+    if bil <= 1 then
+        prima <- false
+    else if bil > 1 then
+        i <- 2
+        while i*i <= bil do
+            if bil%i == 0 then
+                prima <- false
+            endif
+        endwhile
+    endif
+    output(prima)
+endprogram

@@ -1,0 +1,44 @@
+// alfabet 
+program alfabet
+kamus
+    huruf   : character
+algoritma
+    input(huruf)
+    if huruf == 'a' or huruf == 'i' or huruf == 'u' or huruf == 'e' or huruf == 'o' or huruf == 'A' or huruf == 'I' or huruf == 'U' or huruf == 'E' or huruf == 'O' then
+        output("vokal")
+    else 
+        output("konsonan")
+    endif
+endprogram
+
+// audisi
+program audisi
+kamus
+    vote1, vote2, vote3     : string
+algoritma
+    input(vote1, vote2, vote3)
+    if vote1 == "yes" and vote2 == "yes" and vote3 == "yes" then
+        output("lolos")
+    else if (vote1 == "yes" and vote2 == "yes" and vote3 == "no") or (vote1 == "yes" and vote2 == "no" and vote3 == "yes") or (vote1 == "no" and vote2 == "yes" and vote3 == "yes")
+        output("lolos")
+    else {
+        output("tidak lolos")
+    }
+
+// kuis medium
+// Medium no. 1
+program swalayan
+kamus 
+    p1, p2, p3, p4, p5 : integer
+algoritma 
+    input(p1, p2, p3, p4, p5)
+    if (p1+p2+p3) == (p3+p4+p5) && (p2+p3+p4) % (p1+p5) == 0 then
+        output("cashback")
+        output("diskon")
+    else if (p1+p2+p3) == (p3+p4+p5) then
+        output("cashback")
+    else if (p2+p3+p4) % (p1+p5) == 0 then
+        output("diskon")
+    else 
+        output(" ")
+endprogram

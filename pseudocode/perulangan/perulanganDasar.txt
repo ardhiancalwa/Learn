@@ -1,0 +1,46 @@
+program loop
+kamus
+algoritma
+	output("hello")
+	output("hello")
+endprogram
+
+loop ada tiga
+1. for -> to-do
+	-> downto- do
+2. while - do
+3. repeat until
+
+//pseudocode
+for<var_pencacah> <- <nilai_awal> to <nilai_akhir> do
+	<aksi_yang_hilang>
+endfor
+
+// contoh
+for i <- 1 to 4 do
+	output("hello")
+endfor
+
+increment -> nilai bertambahnya
+contoh i <- 0 to 4 // jadi mulai dari 0 kemudian bertambah terus sampai angka 4 jadi itu yg yang disebut increment
+
+// pseudocode
+Program Loop
+kamus
+    i : integer
+algoritma
+    for i <- 1 to 4 do
+        output("hello")
+    endfor
+endprogram
+
+// pseudocode
+Program Loop_Down
+kamus
+    i : integer
+algoritma
+    for i <- 4 downto 1 do
+        i <- i - 1
+        output(i)
+    endfor
+endprogram

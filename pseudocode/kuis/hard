@@ -1,0 +1,134 @@
+// 1
+Program Lembar_Uang
+kamus
+    uang, sepuluhRibu, limaRibu, seribu : integer 
+algoritma
+    input(uang)
+    sepuluhRibu <- uang div 10000
+    limaRibu <- uang mod 10000 div 5000
+    seribu <- uang mod 10000  mod 5000 div 1000
+    output(sepuluhRibu, limaRibu, seribu)
+endprogram
+
+// 2
+Program Cepat_Lari
+kamus
+    jam, menit, detik : integer
+    second : integer
+algoritma
+    input(second)
+    jam <- second div 3600
+    menit <- second mod 3600 div 60
+    detik <- second mod 3600 mod 60
+    output(jam, menit, detik)
+endprogram
+
+// 3
+Program Fall_Guys
+kamus
+    health, level, score : integer
+    gameOver : boolean
+algoritma
+    input(health, score, level)
+    gameOver <- (health == 0) and (level == 1 and score >= 1000) or (level == 2 and score >= 3000) or score >= 7000 
+    output(gameOver)
+endprogram
+
+// 4
+Program Belerang
+kamus
+    b1, b2, b3 : integer
+    kg, gram : integer
+algoritma
+    input(b1, b2, b3)
+    kg <- (b1, + b2 + b3) div 1000
+    gram <- (b1 + b2 + b3) mod 1000
+    output(kg, gram)
+endprogram
+
+// 5
+Program Menukar_Bilangan
+kamus
+    digit1, digit2, digit3, bilangan, bilanganBaru : integer
+algoritma
+    input(bilangan)
+    digit1 <- bilangan mod 10
+    digit2 <- bilangan mod 100 div 10
+    digit3 <- bilangan div 100
+    bilanganBaru <- digit1*100 + digit2*10 + digit3
+    output(bilangan)
+endprogram
+
+// 6
+Program Menggandakan_Digit
+kamus
+    digit1, digit2, bilangan, hasilGanda : integer
+algoritma
+    input(bilangan)
+    digit1 <- bilangan div 10
+    digit2 <- bilangan mod 10
+    hasilGanda <- digit1*1000 + digit1*100 + digit2*10 + digit2
+    output(hasilGanda)
+endprogram
+
+// 7
+Program Tukar_Digit
+kamus
+    bilangan1, bilangan2, bilanganTukar1, bilanganTukar2, digitRatusan, digitSatuan : integer
+algoritma
+    input(bilangan1, bilangan2)
+    digitRatusan <- bilangan1 div 100
+    digitSatuan <- bilangan2 mod 10
+    bilanganTukar1 <- (digitSatuan * 100) + (bilangan1 mod 100)
+    bilanganTukar2 <- (bilangan2 div 10 * 10) + digitRatusan
+    output(bilanganTukar1, bilanganTukar2)
+endprogram
+
+// 8 
+Program Menyisipkan_Digit
+kamus
+         : integer
+algoritma
+    input(bilangan, digitSisip)
+    digit1 <- bilangan div 100
+    digit2 <- bilangan mod 100
+    bilanganBaru <- (digit1 * 1000) + (digitSisip * 100) + digit2
+    output(bilanganBaru)
+endprogram
+
+// 9
+Program Segitiga_Sah
+kamus
+    sisi1, sisi2, sisi3 : real
+    segitiga : boolean
+algoritma
+    input(sisi1, sisi2, sisi3)
+    segitiga <- (sisi1 + sisi2 > sisi3) and (sisi1 + sisi3 > sisi2) and (sisi2 + sisi3 > sisi1)
+    output(segitiga)
+endprogram
+
+// 10
+Program Pengiriman_Paket
+kamus
+    volume, panjang, lebar, tinggi, berat : integer
+    paket : boolean
+algoritma
+    input(panjang, lebar, tinggi, berat)
+    volume <- panjang * lebar * tinggi
+    paket <- volume <= 1000000 and berat <= 30000
+    output(paket)
+endprogram
+
+// 11
+Program Tukar_Coin
+kamus
+    drachma, oboli, mine, attic : integer
+algoritma
+    input(drachma)
+    attic <- drachma div 6000
+    drachma <- drachma mod 6000
+    mine <- drachma div 100
+    drachma <- drachma mod 100
+    drachma <- drachma * 6
+    output(attic, mine, oboli)
+endprogram

@@ -1,0 +1,17 @@
+program parkir
+kamus
+    kode : char
+    uang : integer
+    jumM, jumB : integer
+algoritma
+    input(kode, uang)
+    while kode != 'x' and uang != 0 do
+        if kode == 'm' then
+            jumM = jumM + uang
+        else if kode == 'b' then
+            jumB = jumB + uang
+        endif
+        input(kode, uang)
+    endwhile
+    output(jumB, jumM)
+endprogram 

@@ -1,0 +1,16 @@
+program huruf_k_and_q
+
+kamus
+    huruf : char
+    nilai : boolean
+    i : integer
+algoritma
+    for i <- 1 to 10 do
+        input(huruf)
+        if huruf == 'k' or huruf == 'q' then
+            nilai <- true
+        endif
+    endfor
+    output(nilai)
+endprogram
+

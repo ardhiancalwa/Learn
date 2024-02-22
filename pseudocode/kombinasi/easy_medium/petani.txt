@@ -1,0 +1,18 @@
+program petani
+kamus 
+    i, n, mangga, apel, jeruk : integer
+    buah : string
+algoritma 
+    input(n)
+    for i <- 1 to n do
+        input(buah)
+        if buah == "apel" then 
+            apel = apel + 1
+        else if buah == "jeruk" then 
+            jeruk = jeruk + 1
+        else if buah == "mangga" then
+            mangga = mangga + 1
+        endif
+    endfor
+    output(apel, jeruk, mangga)
+endprogram 

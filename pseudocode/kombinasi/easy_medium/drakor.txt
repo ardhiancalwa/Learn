@@ -1,0 +1,14 @@
+program drakor
+kamus
+    episode, durasi, jumDurasi : integer
+algoritma
+    input(episode, durasi)
+    while episode != 0 and durasi != 0 do
+        if episode%2 != 0 then
+            jumDurasi = jumDurasi + durasi
+        endif
+        input(episode, durasi)
+    endwhile
+    output(jumDurasi)
+endprogram
+

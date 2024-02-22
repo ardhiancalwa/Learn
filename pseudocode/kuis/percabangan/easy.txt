@@ -1,0 +1,92 @@
+// arit_or_geo
+program arit_or_geo
+kamus
+    u1, u2, u3  : integer
+    nilai       : string
+algoritma
+    input(u1, u2, u3)
+    if u2 - u1 == u3 - u2 then
+        nilai <- "aritmatika"
+    else if u2/u1 == u3/u2 then 
+        nilai <- "geometri"
+    else 
+        nilai <- "bukan aritmatika atau geometri"
+    endif
+    output(nilai)
+endprogram
+
+// berangkat
+program berangkat
+kamus 
+    hujan_turun, punya_payung, kondisi  : string
+algoritma
+    input(hujan_turun, punya_payung)
+    if hujan_turun == "ya" then
+        if punya_payung == "ya" then
+            kondisi <- "berangkat"
+        else if punya_payung == "tidak" then
+            kondisi <- "diam di rumah"
+        endif
+    else if hujan_turun == "tidak" then
+        kondisi <- "berangkat"
+    endif
+    output(kondisi)
+endprogram
+
+// berkemah
+program berkemah
+kamus
+    sehat, bekal, cuaca : boolean
+    kemah               : string
+algoritma
+    input(sehat, bekal, cuaca)
+    if sehat and bekal and cuaca then  
+        kemah <- "berkemah"
+    else
+        kemah <- "tidak berkemah"
+    endif
+    output(kemah)
+endprogram
+
+//berlibur
+program berlibur
+kamus
+    gaji, bonus : boolean  
+    berlibur    : string
+algoritma
+    input(gaji, bonus)
+    if gaji and bonus then
+        berlibur <- "berlibur"
+    else if gaji or bonus then
+        berlibur <- "berlibur"
+    else 
+        berlibur <- "tidak berlibur"
+    endif
+    output(berlibur)
+endprogram
+
+// bilangan hari
+program bilangan_hari
+kamus   
+    bilangan    : integer
+    hari        : string
+algoritma
+    input(bilangan)
+    if bilangan == 1 then
+        hari <- "minggu"
+    else if bilangan == 2 then
+        hari <- "senin"
+    else if bilangan == 3 then
+        hari <- "selasa"
+    else if bilangan == 4 then
+        hari <- "rabu"
+    else if bilangan == 5 then
+        hari <- "kamis"
+    else if bilangan == 6 then
+        hari <- "jumat"
+    else if bilangan == 7 then
+        hari <- "sabtu"
+    endif
+    output(hari)
+
+

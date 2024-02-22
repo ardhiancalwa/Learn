@@ -1,0 +1,34 @@
+totalB <- p div 5
+
+if p mod 5 > 0 then
+    totalB <- totalB + 1
+    sisa <- 0
+end if
+
+//appa besar
+if totalB > 3 then
+    totalB <- 3
+    sisa <- p - 3 * 5
+end if 
+output(totalB)
+
+totalK <- sisa div 2 
+
+//appa kecil
+if sisa mod 2 > 0 then
+    totalK <- totalK + 1
+    sisaS <- 0
+end if
+
+//tidak berangkat
+if totalK > 5 then
+    totalK <- 5
+    output(totalK)
+end if 
+
+if totalK > 5 then
+    sisaS <- sisa - 5 * 2
+    output(sisaS)
+end if 
+
+output(totalB, totalK, sisaS)

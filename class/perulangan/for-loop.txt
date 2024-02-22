@@ -1,0 +1,165 @@
+========
+FOR_LOOP
+========
+
+a) for-to-do
+
+<inisiasi> //pemberian nilai untuk variabel yang ada pada kondisi
+for <var_pencacah> <- nilai_awal to nilai_akhir do
+    <badan_perulangan>
+endfor
+<terminasi>
+
+-----------
+
+Program Mencetak_Tel_U
+kamus
+    i : integer
+algoritma
+    for i <- 1 to 5 do
+        output("tel_u")
+    endfor
+endprogram
+
+-----------
+
+Program Mencetak_Bilangan
+kamus
+    bil : integer
+algoritma
+    for bil <- 1 to 5 do
+        output(bil)
+    endfor
+endprogram
+
+-----------
+
+Program Mencetak_Bilangan_input
+kamus
+    n, m, i : integer
+algoritma
+    input(n, m)
+    for i <- m to n do
+        output(i)
+    endfor
+endprogram
+
+-----------
+
+b) for-downto-do
+
+<inisiasi> //pemberian nilai untuk variabel yang ada pada kondisi
+for <var_pencacah> <- nilai_awal downto nilai_akhir do
+    <badan_perulangan>
+endfor
+<terminasi>
+
+-----------
+
+Program Mencetak_Bilangan_Bulat
+kamus
+    i : integer
+algoritma
+    for i <- 4 downto 1 do
+        output(i)
+    endfor
+endprogram
+
+========
+WHILE-DO
+========
+
+<inisiasi>
+while <kondisi> do
+    <badan_perulangan>
+endwhile
+<terminasi>
+
+-----------
+
+Program Mencetak_Hello
+kamus
+    i : integer
+algoritma
+    i <- 1
+    while i >= 5 do
+        output("hello")
+        i <- i + 1
+    endwhile
+endprogram
+
+-----------
+
+Program Jumlah_Bilangan
+kamus
+    bil, i, n, jumlah : integer
+algoritma
+    jumlah <- 0
+    input(n)
+    i <- 1
+    for i <= n to do 
+        input(bil)
+        jumlah <- jumlah + 1
+        i <- i + 1
+    endfor
+    output(jumlah)
+endprogram
+
+-----------
+
+//contoh
+ketemu <- false
+while not ketemu do
+
+//contoh2
+i <- 5
+while i >= 5 do
+
+//contoh3
+ketemu <- false
+i <- 1
+while not ketemu and i <= 5 do
+
+-----------
+
+Buatlah program untuk menyatakan digit-digit pada bilangan bulat positif.
+Masukkan : berupa 1 bilangan positif
+Keluar : berupa jumlah digit-digit
+
+Program Hitung_Digit
+kamus
+    bilangan, jumlah, digit : integer
+algoritma
+    jumlah <- 0
+    input(bilangan)
+    while bilangan > 0 do
+        digit <- bilangan mod 10
+        jumlah <- jumlah + digit
+        bilangan <- bilangan div 10
+    endwhile
+endprogram
+
+-----------
+
+============
+REPEAT-UNTIL
+============
+
+<inisiasi>
+repeat
+    <badan_perulangan>
+until <kondisi>
+<terminasi>
+
+-----------
+
+Program Cetak_Tel_U
+kamus
+    i : integer
+algoritma
+    i <- 1
+    repeat
+        output("tel_u")
+        i <- i + 1
+    until i > 5
+endprogram

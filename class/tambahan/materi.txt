@@ -1,0 +1,134 @@
+// Pekan 1
+program <nama program>
+    {}
+
+kamus
+    {daftar variable/konstanta dengan tipe datanya}
+
+algoritma
+    {intruksi}
+endprogram
+
+Data Dasar (Primitif)
+ ===================
+1. Numerik
+    a. Bilangan bulat (integer)
+    b. Bilangan pecahan (real)
+2. Teks
+    a. Satu teks (char)
+    b. Lebih dari satu teks (string)
+3. Boolean
+    true and false
+
+    =======
+
+Deklarasi variable
+
+<nama_variable> : <tipe_data>
+
+// Pekan 2
+
+I. Variable
+-----------
+
+Variable adalah nama yang digunakan untuk menampung nilai(value)
+
+Deklarasi : 
+<nama_variable> : <tipe_data>
+
+bilangan_bulat : integer
+bilangan pecahan : real
+karakter : char
+ketemu : boolean
+nama : string
+
+<nama_variable_1>, <nama_variable_2>, ... <tipe_data>
+
+bil1, bil2, bil3 : integer
+berat_badan, tinggi_badan : integer
+rata-rata : real
+
+II. KONSTANTA
+-------------
+
+constanta <nama_konstanta> : <tipe_data> = <nilai>
+
+constanta phi : real = 3.14159...
+constanta max : integer = 100
+constanta univ : string = "Tel_U"
+
+
+III. Komentar
+-------------
+
+{ program untuk menghitung luas lingkaran }
+
+didalam golang, komentar menggunakan double slas (//) atau (/* */)
+
+
+IV. Tipe Data
+-------------
+
+Sign : bisa bilangan positif atau negatif
+int8
+int16
+int32
+int64
+
+Unsigned : hanya bilangan positif
+uint8
+uint16
+uint32
+uint64
+
+integer, real
+
+V. I/O
+-------
+
+kamus
+    karakter : char
+algoritma
+    input(karakter)
+    output(karakter)
+endprogram
+
+VI. ASSIGNMENT
+-------------
+
+hasil <- b1 + b2
+hasil <- 3
+
+hasil <- b1 + penjumlahan(3, 5)
+
+VII. Pointer
+-----------
+
+pointer adalah variable yang valuenya berisi alamat memori.
+
+VIII. Operasi Dasar (Ekspresi)
+-----------------------------
+
+1 + 2       (ekspresi aritmatika)
+1 + 2 * 4 
+
+Terdapat harga barang (H) dan diskon (D).
+Buatlah ekspresi untuk menghitung harga barang setelah diskon
+
+H - H * D 
+
+Terdapat dua buah bilangan bulat (B1, B2). Buatlah ekspresi untuk menghitung penjumlahan kedua bilangan itu.
+
+B1 + b2
+
+Terdapat 3 umur mahasiswa (u1, u2, u3)
+Buatlah ekspresi untuk menghitung rata-rata umur ketiganya.
+
+(u1 + u2 + u3) / 3
+
+Terdapat dua bilangan bulat (b1, b2)
+Buatlah ekspresi aritmatika untuk menghitung sisa pembagian b1 oleh b2
+
+b1 % b2
+b1 mod b2
+

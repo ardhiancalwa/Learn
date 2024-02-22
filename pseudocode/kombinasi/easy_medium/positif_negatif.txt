@@ -1,0 +1,15 @@
+program hitung_positif_negatif
+kamus
+    positif, negatif, bil : integer
+algoritma
+    input(bil)
+    while bil != 0 do   
+        if bil > 0 then
+            positif = positif = 1
+        else if bil < 0 then
+            negatif = negatif = 1
+        endif
+        input(bil)
+    endwhile
+    output(positif, negatif)
+endprogram

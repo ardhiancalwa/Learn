@@ -1,0 +1,389 @@
+// 1
+Program Bilangan_Genap
+kamus
+    a : integer
+    genap : boolean
+algoritma
+    input(a)
+    genap <- a mod 2 == 0
+    output(genap)
+endprogram
+
+// 2
+Program Bilangan_Ganjil
+kamus
+    x : integer
+    ganjil : boolean
+algoritma
+    input(x)
+    ganjil <- x mod 2 != 0
+    output(ganjil)
+endprogram
+
+// 3
+Program Kelipatan_Tiga
+kamus
+    B : integer
+    kelipatan : boolean
+algoritma
+    input(B)
+    kelipatan <- B mod 3 == 0
+    output(kelipatan)
+endprogram
+
+// 4
+Program Bilangan_Terbesar
+kamus
+    X, Y, Z : integer
+    terbesar : boolean
+algoritma
+    input(X, Y, Z)
+    terbesar <- X > Y and X > Z
+    output(terbesar)
+endprogram
+
+// 5
+Program Faktor
+kamus
+    A, B : integer
+    faktor : boolean
+algoritma
+    input(A, B)
+    faktor <- B mod A == 0
+    output(faktor)
+endprogram
+
+// 6
+Program Segitiga
+kamus
+    A, B, C : integer
+    segitiga : boolean
+algoritma
+    input(A, B, C)
+    segitiga <- A != 0 and B != 0 and C != 0 and A + B > C and B + C > A and C + A > B
+    output(segitiga)
+endprogram
+
+// 7
+Program Dadu_9
+kamus
+    D1, D2, D3 : integer
+    sembilan : boolean
+algoritma
+    input(D1, D2, D3)
+    sembilan <- D1 + D2 + D3 == 9
+    output(sembilan)
+endprogram
+
+// 8
+Program Cashback_Undia
+kamus
+    A : integer
+    cashback : boolean
+algoritma
+    input(A)
+    cashback <- A div 1000 == A mod 10
+    output(cashback)
+endprogram
+
+// 9 
+Program Diskon_Undian
+kamus
+    D : integer
+    diskon : boolean
+algoritma
+    input(D)
+    diskon <- (D div 1000 + D div 100 mod 10) > (D div 10 mod 10 + D mod 10)
+    output(diskon)
+endprogram
+
+// 10
+Program Bilangan_Positif
+kamus
+    a : integer
+    positif : boolean
+algoritma
+    input(a)
+    positif <- a > 0
+    output(positif)
+endprogram
+
+// 11
+Program Bilangan_Negatif
+kamus
+    a : integer
+    negatif : boolean
+algoritma
+    input(a)
+    negatif <- a < 0
+    output(negatif)
+endprogram
+
+// 12
+Program Dadu_Ganjil_Semua
+kamus
+    D1, D2, D3 : integer
+    ganjil : boolean
+algoritma
+    input(D1, D2, D3)
+    ganjil <- D1 mod 2 != 0 and D2 mod 2 != 0 and D3 mod 3 != 0
+    output(ganjil)
+endprogram
+
+// 13
+Program Dadu_Genap_Semua
+kamus
+    D1, D2, D3 : integer
+    genap : boolean
+algoritma
+    input(D1, D2, D3)
+    genap <- D1 mod 2 == 0 and D2 mod 2 == 0 and D3 mod 3 == 0
+    output(genap)
+endprogram
+
+// 14
+Program Dadu_Ganjil
+kamus
+    D1, D2, D3 : integer
+    ganjil : boolean
+algoritma
+    input(D1, D2, D3)
+    ganjil <- D1 mod 2 != 0 or D2 mod 2 != 0 or D3 mod 2 != 0
+    output(ganjil)
+endprogram
+
+// 15
+Program Dadu_Genap
+kamus
+    D1, D2, D3 : integer
+    genap : boolean
+algoritma
+    input(D1, D2, D3)
+    genap <- D1 mod 2 == 0 or D2 mod 2 == 0 or D3 mod 2 == 0
+    output(genap)
+endprogram
+
+// 16
+Program Harga_Barang
+kamus
+    H, D, hargaBarang: integer    
+algoritma
+    input(H, D)
+    hargaBarang <- H * (1 - D div 100)
+    output(hargaBarang)
+endprogram
+
+// 17 
+Program Kelipatan
+kamus
+    A, B : integer
+    kelipatan : boolean
+algoritma
+    input(A, B)
+    kelipatan <- A mod B == 0
+    output(kelipatan)
+endprogram
+
+// 18
+Program Bilangan_Nol
+kamus
+    a : integer
+    nol : boolean
+algoritma
+    input(a)
+    nol <- a == 0
+    output(nol)
+endprogram
+
+// 19
+Program Huruf_Vokal
+kamus
+    huruf : char
+    vokal : boolean
+algoritma
+    input(huruf)
+    vokal <- huruf == 'a' or huruf == 'i' or huruf == 'u' or huruf == 'e' or huruf == 'o'
+    output(vokal)
+endprogram
+
+// 20
+Program Huruf_Konsonan
+kamus
+    huruf : char
+    konsonan : boolean
+algoritma
+    input(huruf)
+    konsonan <- (huruf >= 'a' and huruf <= 'z') and huruf != 'a' and huruf != 'i' and huruf != 'u' and huruf != 'e' and huruf 'o'
+    output(konsonan)
+endprogram
+
+// 21
+Program Casback_Member
+kamus
+    belanja : integer
+    member, cashback : boolean
+algoritma
+    input(belanja, member)
+    cashback <- member == true and belanja >= 1000000   
+    output(cashback)
+endprogram
+
+// 22
+Program Luas_PersegiPanjang
+kamus
+    panjang, lebar : integer
+    luasGanjil : boolean
+algoritma
+    input(panjang, lebar)
+    luasGanjil <- (panjang * lebar) mod 2 != 0
+    output(luasGanjil)
+endprogram
+
+// 23
+Program Terurut_Terbesar
+kamus
+    a, b, c, d : integer
+    besar : boolean
+algoritma
+    input(a, b, c, d)
+    besar <- a < b and b < c and c < d
+    output(besar)
+endprogram
+
+// 24
+Program Terurut_Terkecil
+kamus
+    a, b, c, d : integer
+    kecil : boolean
+algoritma
+    input(a, b, c, d)
+    kecil <-  a > b and b > c and c > d
+    output(kecil)
+endprogram
+
+// 25
+Program Menghitung_Luas_PersegiPanjang
+kamus
+    P, L, luas : integer
+algoritma
+    input(P, L)
+    luas <- P * L
+    output(luas)
+endprogram
+
+// 26
+Program Menghitung_Keliling_PersegiPanjang
+kamus
+    P, L, keliling : integer
+algoritma
+    input(P, L)
+    keliling <- 2 * (P + L)
+    output(keliling)
+endprogram
+
+// 27
+Program Menhitung_Volume_Balok
+kamus
+    P, L, T, volume : integer
+algoritma
+    input(P, L, T)
+    volume <- P * L * T
+    output(volume)
+endprogram
+
+// 28
+Program Menghitung_LuasPermukaan_Balok
+kamus
+    P, L, T, LP : integer
+algoritma
+    input(P, L, T)
+    LP <- 2 * (P*L + P*T + L*T)
+    output(LP)
+endprogram
+
+// 29
+Program Menghitung_Luas_Lingkaran
+kamus
+    r, luas : real
+    constant pi : real = 3.14
+algoritma
+    input(r)
+    luas <- pi * r * r
+    output(luas)
+endprogram
+
+// 30
+Program Konversi_Menit
+kamus
+    j, menit : integer
+algoritma
+    input(j)
+    menit <- j * 60 
+    output(menit)
+endprogram
+
+// 31
+Program NomorPolisi_Bandung
+kamus
+    nopol : string
+    bandung : boolean
+algoritma
+    input(nopol)
+    bandung <- nopol == "D"
+    output(bandung)
+endprogram
+
+// 32
+Program Nilai_Quiz
+kamus
+    D : integer
+    quiz : boolean
+algoritma 
+    input(D)
+    quiz <- D >= 0 && D <= 100 
+    output(quiz)
+endprogram
+
+// 33
+Program Tahun_Kabisat
+kamus
+    tahun : integer
+    kabisat : boolean
+algoritma
+    input(tahun)
+    kabisat <- tahun mod 400 == 0 or (tahun mod 4 == 0 and tahun mod 100 != 0)
+    output(kabisat)
+endprogram
+
+// 34
+Program Konsekutif
+kamus
+    a, b, c, d : integer
+    konsekutif : boolean
+algoritma
+    input(a, b, c, d)
+    konsekutif <- (a-b == 1 or b-a == 1) and (b-c == 1 or c-b == 1) and (c-d == 1 or d-c == 1)
+    output(konsekutif)
+endprogram
+
+// 35
+Program X_Terkecil
+kamus
+    X, Y, Z : integer
+    terkecil : boolean
+algoritma
+    input(X, Y, Z)
+    terkecil <- X < Y and X < Z
+    output(terkecil)
+endprogram
+
+// 36
+Program Panjang_Password
+kamus
+    pw : string
+    panjang : boolean
+algoritma
+    input(pw)
+    panjang <- len(pw) >= 4
+    output(panjang)
+endprogram

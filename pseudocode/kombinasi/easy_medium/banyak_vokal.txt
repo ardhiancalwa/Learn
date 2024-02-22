@@ -1,0 +1,14 @@
+program vokal
+kamus 
+    vokal : integer
+    huruf : char
+algoritma 
+    input(huruf)
+    while huruf != '.' do
+        if huruf == 'a' or huruf == 'i' or huruf == 'u' or huruf == 'e' or huruf == 'o' then
+            vokal = vokal + 1
+        endif
+        input(huruf)
+    endwhile
+    output(vokal)
+endprogram 

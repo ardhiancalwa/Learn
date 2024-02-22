@@ -1,0 +1,18 @@
+program pelajar
+kamus
+    sd, smp, sma, jumSiswa : integer
+    tingkat : string
+algoritma
+    input(tingkat, jumSiswa)
+    while tingkat != "x" and jumSiswa != 0 do
+        if tingkat == "sd" then
+            sd = sd + jumSiswa
+        else if tingkat == "smp" then
+            smp = smp + jumSiswa
+        else if tingkat == "sma" then
+            sma = sma + jumSiswa
+        endif
+        input(sd, smp, sma)
+    endwhile
+    output(sd, smp, sma)
+endprogram
