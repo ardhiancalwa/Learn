@@ -3,14 +3,30 @@ package main
 import "fmt"
 
 func hitungDeret(n, m int) float64 {
-	var jumlahDeret, suku float64
+	var jumlahDeret float64
 	var i int
 
 	jumlahDeret = 0.0
-	suku = 1.0
-	for i = n; i <= m; i++ {
-		jumlahDeret += suku * (3.0 / float64(i))
-		suku *= -1
+
+	if n%2 != 0 {
+		for i = n; i <= m; i++ {
+			if i%2 == 0 {
+				jumlahDeret -= 3.0 / float64(i)
+			} else {
+				jumlahDeret += 3.0 / float64(i)
+			}
+		}
+	}
+	if n%2 == 0 {
+		for i = n; i <= m; i++ {
+			if i%2 == 0 {
+				jumlahDeret += 3.0 / float64(i) 
+			} else {
+				jumlahDeret -= 3.0 / float64(i)
+			}
+
+		}
+
 	}
 	return jumlahDeret
 }
