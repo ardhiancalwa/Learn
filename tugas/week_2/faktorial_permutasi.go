@@ -1,23 +1,38 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func faktorial(n int) int {
-	if n == 0 {
-		return 1
+func factorial(n int) int {
+	result := 1
+	for i := 1; i <= n; i++ {
+		result *= i
 	}
-	return n * faktorial(n-1)
+	return result
 }
 
-func permutasi(x, y int) int {
+func permutation(x, y int) int {
+	var xFactorial, yFactorial int
+	var hasilPermutasi int
 	if x >= y {
-		return faktorial(x) / faktorial(x-y)
+		xFactorial = factorial(x)
+		yFactorial = factorial(x - y)
+
+	} else if x < y {
+		xFactorial = factorial(y)
+		yFactorial = factorial(y - x)
 	}
-	return faktorial(y) / faktorial(y-x)
+	hasilPermutasi = xFactorial / yFactorial
+
+	return hasilPermutasi
 }
 
 func main() {
 	var x, y int
 	fmt.Scan(&x, &y)
-	fmt.Println(faktorial(x), faktorial(y), permutasi(x, y))
+
+	permutation := permutation(x, y)
+
+	fmt.Println(factorial(x), factorial(y), permutation)
 }

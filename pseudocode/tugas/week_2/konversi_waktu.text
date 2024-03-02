@@ -1,0 +1,16 @@
+funtion konversiWaktu(jam, menit, detik : integer) -> integer
+{mengembalikan nilai fungsi konversiWaktu dalam bentuk integer}
+kamus
+    konversi : integer 
+algoritma
+    konversi <- jam * 3600 + menit * 60 + detik
+    return konversi
+endfunction
+
+program hitung_konversi
+kamus
+    jam, menit, detik : integer
+algoritma
+    input(jam, menit, detik)
+    output("Hasil konversi =", konversiWaktu(jam, menit, detik), "detik)
+endprogram

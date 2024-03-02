@@ -1,0 +1,19 @@
+function segitiga(s1, s2, s3 : integer) -> string
+{mengembalikan nilai fungsi segitiga dalam bentuk string}
+kamus 
+algoritma
+    if s1+s2 > s3 && s1+s3 > s2 && s2+s3 > s1 then
+        return "segitiga"
+    else 
+        return "bukan segitiga"
+    endif
+endfunction
+
+program hitung_segitiga
+kamus
+    s1, s2, s3 : integer
+algoritma
+    input(s2, s1, s3)
+    output(segitiga(s1, s2, s3))
+endprogram
+

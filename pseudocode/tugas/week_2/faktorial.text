@@ -1,0 +1,36 @@
+function faktorial(n : integer) -> integer
+{mengembalikan nilai fungsi faktorial dalam bentuk ineteger}
+kamus
+    hasil, i : integer
+algoritma
+    hasil <- 1
+    for i <- 1 to n do
+        hasil <- hasil * i
+    endfor
+    return hasil
+endfunction
+
+function permutasion(x, y : integer) -> integer
+{mengembalikan nilai fungsi permutasi dalam bentuk integer}
+kamus
+    faktorialX, faktorialY, hasil : integer
+algoritma
+    if x >= y then
+        faktorialX <- faktorial(x)
+        faktorialY <- faktorial(x-y)
+    else if x < y then
+        faktorialX <- faktorial(x)
+        faktorialY <- faktorial(y-x)
+    endif
+    hasil <- faktorialX div faktorialY
+    return hasil
+endfunction
+
+program hitung_faktorial_permutasi
+kamus
+    x, y, permutasi : integer
+algoritma
+    input(x, y)
+    permutasi <- permutasion(x, y)
+    output(faktorial(x), faktorial(y), permutasi)
+endprogram    
