@@ -21,7 +21,9 @@ func main() {
 	var i, step, tempAkhir int
 	fmt.Scan(&C, &tempAkhir, &step)
 
-	fmt.Println("   Celsius     Reamur Fahrenheit     Kelvin")
+	fmt.Printf("%10s %10s %10s %10s\n", "Celsius", "Reamur", "Fahrenheit", "Kelvin")
+
+	// fmt.Println("   Celsius     Reamur Fahrenheit     Kelvin")
 	for i = int(C); i <= tempAkhir; i += step {
 		R = reamur(C)
 		F = fahrenheit(C)

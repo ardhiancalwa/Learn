@@ -7,16 +7,14 @@ import (
 
 func panjangX(R, T float64) float64 {
 	var X float64
-	var derajatSudutX float64
-	derajatSudutX = T * math.Pi / 180
-	X = R * math.Cos(derajatSudutX)
+	T = T * math.Pi / 180
+	X = R * math.Cos(T)
 	return X
 }
 func panjangY(R, T float64) float64 {
 	var Y float64
-	var derajatSudutY float64
-	derajatSudutY = T * math.Pi / 180
-	Y = R * math.Sin(derajatSudutY)
+	T = T * math.Pi / 180
+	Y = R * math.Sin(T)
 	return Y
 }
 
