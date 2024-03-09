@@ -1,25 +1,27 @@
-// Buatlah fungsi saja
 package main
 
 import "fmt"
 
-func totalTabungan(x, y, z int) int {
-	var i, total_tabungan, tabungan_akhir int
-	total_tabungan = 0
-	tabungan_akhir = 0
-	for i = 1; i <= z; i++ {
-		if i%2 == 0 || i%3 == 0 {
-			total_tabungan = total_tabungan + x
-			tabungan_akhir = total_tabungan
-            
+func konsekutif(bilangan int) {
+	konsekutif := false
+
+	for bilangan >= 10 {
+		if konsekutif && (bilangan%10)-(bilangan/10%10) != 1 || ((bilangan/10%10)-(bilangan%10) != 1) {
+			konsekutif = true
+			break
 		}
+		bilangan /= 10
 	}
-	return tabungan_akhir + y
+
+	if konsekutif {
+		fmt.Println("true")
+	} else {
+		fmt.Println("false")
+	}
 }
 
 func main() {
-	var hasil, a, b, c int
-	fmt.Scan(&a, &b, &c)
-	hasil = totalTabungan(a, b, c)
-	fmt.Println(hasil)
+	var bilangan int
+	fmt.Scan(&bilangan)
+	konsekutif(bilangan)
 }
