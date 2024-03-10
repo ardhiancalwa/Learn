@@ -9,38 +9,38 @@ func hitungmenang(g, k int, jm *int) {
 }
 func hitungdraw(g, k int, jd *int) {
 	if g == k {
-		*jd = *jd + 1
+		*jd++
 	}
 }
 func hitungkalah(g, k int, jk *int) {
 	if g < k {
-		*jk = *jk + 1
+		*jk++
 	}
 }
 func hitungjumgolkegolanselisih(g, k int, jg, jk, jsg *int) {
-	*jg = *jg + g
-	*jk = *jk + k
+	*jg += g
+	*jk += k
 	*jsg = *jg - *jk
 }
-func hitungjumpoint(jp *int) {
-
-	*jp = hitungmenang(g, k, &jm)*3 + hitungdraw(g, k, &jd)
+func hitungjumpoint(g, k int, jm, jd, jp *int) {
+	if g > k {
+		*jm += 1
+	}
+	if g == k {
+		*jd += 1
+	}
+	*jp = (*jm*3) + (*jd*1)
 }
 
 func main() {
 	var n, g, k, i, jm, jd, jk, jk1, jg, jsg, jp int
 	fmt.Scan(&n)
-	i = 1
-	for i <= n {
+	
+	for i = 1; i <= n; i++ {
 		fmt.Scan(&g, &k)
-		hitungmenang(g, k, &jm)
-		hitungdraw(g, k, &jd)
 		hitungkalah(g, k, &jk)
 		hitungjumgolkegolanselisih(g, k, &jg, &jk1, &jsg)
-		hitungjumpoint(&jp)
-		i = i + 1
+		hitungjumpoint(g, k, &jm, &jd, &jp)	
 	}
-
-	fmt.Print(n, " ", jm, " ", jd, " ", jk, " ", jg, " ", jk, " ", jsg, " ", jp)
-
+	fmt.Print(n, " ", jm, " ", jd, " ", jk, " ", jg, " ", jk1, " ", jsg, " ", jp)
 }
