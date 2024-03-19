@@ -3,9 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	for i := 0; i <= 10; i++ {
-		fmt.Print(fibonacci(i), " ")
-	}
+	var fib, N int
+	fmt.Scan(&N)	
+	fib = fibonacci(N)
+	fmt.Println(fib)
 }
 
 func fibonacci(n int) int {
