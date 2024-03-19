@@ -1,0 +1,24 @@
+procedure faktor(in n, i : integer)
+{
+    I.S terdefinisi bilangan bulat n dan i
+    F.S menampilkan barisan bilangan yang menjadi faktor dari n(terurut dari i = 1 sampai n)
+}
+algoritma
+    if i == n then
+        output(i)
+    else 
+        if n mod i == 0 then
+            output(i, " ")
+        endif
+        faktor(n, i+1)
+    endif
+endprocedure
+
+program hasil_faktor
+kamus
+    n, i : integer
+algoritma
+    i <- 1
+    input(n)
+    faktor(n, i)
+endprogram

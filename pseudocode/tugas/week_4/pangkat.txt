@@ -1,0 +1,18 @@
+function pangkat(x, y, i : integer) -> integer
+{
+    mengembalikan nilai hasil pangkat dari dua buah bilangan yaitu x dan y
+}
+algoritma
+    if i < y then
+        return x * pangkat(x, y, i+1)
+    endif
+    return 1
+endfunction
+
+program hasil_pangkat
+kamus
+    x, y, i : integer
+algoritma
+    input(x, y)
+    output(pangkat(x, y, i))
+endprogram

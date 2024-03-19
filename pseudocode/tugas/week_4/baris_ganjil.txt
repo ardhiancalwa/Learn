@@ -1,0 +1,25 @@
+procedure ganjil(in n, i : integer)
+{
+    I.S terdefinisi bilangan bulat n dan i 
+    F.S terdiri dari barisan bilangan ganjil dari i = 1 sampai n
+}
+algoritma
+    if i == n then
+        output(i)
+    else
+        output(i, " ")
+        ganjil(n, i+2)
+    endif
+endprocedure
+
+program urut_ganjil
+kamus
+    n, i : integer
+algoritma
+    input(n)
+    i <- 1
+    if n mod 2 == 0 then
+        n <- n - 1
+    endif
+    ganjil(n, i)
+endprogram

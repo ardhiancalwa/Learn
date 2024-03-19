@@ -19,5 +19,4 @@ func polaBintang(n, i, j int, result string) string {
 	} else {
 		return polaBintang(n, i+1, 0, result+"\n")
 	}
-
 }
