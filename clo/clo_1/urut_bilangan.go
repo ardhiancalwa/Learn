@@ -10,16 +10,13 @@ func main() {
 
 func sortAscending(a, b, c int) {
 	if a > b {
-        if a > c {
-            fmt.Println(a)
-        } else {
-            fmt.Println(c)
-        }
-    } else {
-        if b > c {
-            fmt.Println(b)
-        } else {
-            fmt.Println(c)
-        }
-    }
+		a, b = b, a
+	}
+	if a > c {
+		a, c = c, a
+	}
+	if b > c {
+		b, c = c, b
+	}
+    fmt.Println(a, b, c)
 }
