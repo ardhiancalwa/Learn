@@ -9,6 +9,6 @@ func main() {
 	fmt.Println(luasPersegiPanjang)
 }
 
-func hitungLuas(panjang, lebar int, luasPersegiPanjang *int) {
-    *luasPersegiPanjang = panjang * lebar
+func hitungLuas(p, l int, luas *int) {
+	*luas = p * l
 }

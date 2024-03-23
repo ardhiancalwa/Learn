@@ -3,16 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	var bil int
-	fmt.Scan(&bil)
-	fmt.Println(jumlah(bil, 0))
-
+	var n int
+	fmt.Scan(&n)
+	fmt.Println(jumlahTiapDigit(n, 0))
 }
 
-func jumlah(n, hasil int) int {
+func jumlahTiapDigit(n, hasil int) int {
 	if n == 0 {
 		return hasil
 	} else {
-		return jumlah(n/10, hasil+n%10)
+		return jumlahTiapDigit(n/10, hasil+n%10)
 	}
 }
